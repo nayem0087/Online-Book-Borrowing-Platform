@@ -20,8 +20,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className="max-w-[90%] mx-auto w-full px-6 py-4 flex items-center justify-between">
-
+        <div className="w-full shadow">
+            <div className="max-w-[90%] mx-auto px-6 py-4 flex items-center justify-between">
             {/* 🔹 Left: Logo */}
 
             <Link href="/">
@@ -36,11 +36,11 @@ const Navbar = () => {
             </Link>
 
             {/* 🔹 Center: Nav Links */}
-            <div className="space-x-6 hidden md:flex">
+            <ul className="space-x-6 font-semibold text-gray-500 hidden md:flex">
                 <Link href="/" className="hover:text-gray-300">Home</Link>
                 <Link href="/books" className="hover:text-gray-300">All Books</Link>
                 <Link href="/profile" className="hover:text-gray-300">My Profile</Link>
-            </div>
+            </ul>
 
             {/* 🔹 Right: Auth Section */}
             <div>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
-
+              </div>
         </div>
     );
 };

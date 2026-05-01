@@ -1,12 +1,15 @@
+import { FaBook } from "react-icons/fa";
 
 
 const TopBooks = () => {
   return (
     <section className="my-20 px-6">
-      <h2 className="text-3xl font-bold text-center mb-12">
-         Top Books
+       
+      <h2 className="text-3xl font-bold flex items-center justify-center gap-2">
+        <FaBook className="w-6 h-6 text-green-700"/> Top Books
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-10">
         <div className="space-y-2 hover:scale-105 transition duration-300">
           <p className="text-gray-500 font-semibold text-md">Atomic Habits</p>
           <h3 className="text-3xl font-bold">320+</h3>

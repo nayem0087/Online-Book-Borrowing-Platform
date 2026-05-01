@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import FeaturedBooks from "@/components/FeaturedBooks";
+import ReadingHacks from "@/components/ReadingHacks";
 import TopBooks from "@/components/TopBooks";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner/>
       <FeaturedBooks/>
       <TopBooks/>
+      <ReadingHacks/>
     </div>
   );
 }

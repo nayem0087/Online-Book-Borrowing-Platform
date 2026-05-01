@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
     >
       <body suppressHydrationWarning>
         <Navbar/>
-        {children}
+        <main className="max-w-[90%] mx-auto">
+          {children}
+        </main>
         <Footer/>
       </body>
     </html>

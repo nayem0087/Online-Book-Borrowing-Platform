@@ -5,8 +5,8 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white mt-20 py-20 px-20">
-      <div className="max-w-[90%] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-40">
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white mt-20 py-20 lg:px-10">
+      <div className="max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-40 gap-10">
         
         {/* About */}
         <div>

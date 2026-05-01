@@ -1,21 +1,35 @@
-import BooksCard from "./BooksCard";
 
 
-const TopBooks = async() => {
-    const res = await fetch('https://online-book-borrowing-platform-phi.vercel.app/data.json');
-    const data = await res.json();
-    const topData = data.slice(0, 4);
-    
-    return (
-        <div>
-            <h1 className="font-bold text-2xl mt-16 mb-6">Top Books</h1>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-                {topData.map(data => <BooksCard key={data.id} data={data}>
-                    
-                </BooksCard>)}
-            </div>
+const TopBooks = () => {
+  return (
+    <section className="my-20 px-6">
+      <h2 className="text-3xl font-bold text-center mb-12">
+         Top Books
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="space-y-2 hover:scale-105 transition duration-300">
+          <p className="text-gray-500 font-semibold text-md">Atomic Habits</p>
+          <h3 className="text-3xl font-bold">320+</h3>
+          <span className="text-green-500">Most Borrowed</span>
         </div>
-    );
+        <div className="space-y-2 hover:scale-105 transition duration-300">
+          <p className="text-gray-500 font-semibold text-md">Deep Work</p>
+          <h3 className="text-3xl font-bold">250+</h3>
+          <span className="text-blue-500">Popular</span>
+        </div>
+        <div className="space-y-2 hover:scale-105 transition duration-300">
+          <p className="text-gray-500 font-semibold text-md">The Alchemist</p>
+          <h3 className="text-3xl font-bold">290+</h3>
+          <span className="text-purple-500">Top Rated</span>
+        </div>
+        <div className="space-y-2 hover:scale-105 transition duration-300">
+          <p className="text-gray-500 font-semibold text-md">Rich Dad Poor Dad</p>
+          <h3 className="text-3xl font-bold">310+</h3>
+          <span className="text-orange-500">Trending</span>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default TopBooks;

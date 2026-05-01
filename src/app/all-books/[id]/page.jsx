@@ -28,16 +28,16 @@ const BooksDetailsPage = async ({ params }) => {
     const cat = categoryStyle[book.category] ?? { bg: "bg-gray-100", text: "text-gray-700" };
 
     return (
-        <div className="max-w-4xl mx-auto px-4 py-10">
+        <div className="max-w-6xl mx-auto px-4 py-10">
             <h1 className="text-xl font-medium mb-6">Book details</h1>
 
             {/* main card */}
             <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-                <div className="grid grid-cols-1 md:grid-cols-[280px_1fr]">
+                <div className="grid grid-cols-1 md:grid-cols-[400px_1fr]">
 
                     {/* cover */}
                     <div className="flex items-center p-4 justify-center border-b md:border-b-0 md:border-r border-gray-200">
-                        <div className="relative w-full h-80">
+                        <div className="relative w-full h-100">
                             <Image
                                 src={book.image_url}
                                 alt={book.title}

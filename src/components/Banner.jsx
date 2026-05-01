@@ -18,8 +18,9 @@ const Banner = () => {
             Browse thousands of books, borrow with ease, and dive into a world of knowledge—your digital library is just a click away.
           </p>
           <div className="flex justify-center">
-            <Link href="#">
-              <Button className="font-semibold px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base">
+            <Link href="/all-books">
+              <Button
+               className="font-semibold px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base">
                 Browse All Books
               </Button>
             </Link>

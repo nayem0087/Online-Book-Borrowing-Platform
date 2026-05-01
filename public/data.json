@@ -51,7 +51,7 @@
     "description": "A beginner's guide to understanding space missions and discoveries.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
+    "image_url": "https://m.media-amazon.com/images/I/91O+h3djJRL._SY385_.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A thrilling mystery that unfolds in the darkness of the night.",
     "category": "Story",
     "available_quantity": 7,
-    "image_url": "https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+    "image_url": "https://files.idyllic.app/files/static/3172979?width=640&optimizer=image"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "A step-by-step guide to learning Python programming.",
     "category": "Tech",
     "available_quantity": 11,
-    "image_url": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
+    "image_url": "https://m.media-amazon.com/images/I/61ViPUXS8ZL._SY425_.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "An easy-to-understand guide to human body systems.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8"
+    "image_url": "https://m.media-amazon.com/images/I/61akcqkld5L._SY342_.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A romantic tale that transcends time and space.",
     "category": "Story",
     "available_quantity": 13,
-    "image_url": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+    "image_url": "https://m.media-amazon.com/images/I/71E9m4vABxL._SY425_.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "A practical guide to building modern web apps with Next.js.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+    "image_url": "https://images.manning.com/360/480/resize/book/c/cb7c6f7-482b-45dd-9189-dc9a32d53aa5/Boduch-Next-MEAP-HI.png"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Exploring the possibilities and challenges of artificial intelligence.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995"
+    "image_url": "https://rigipublication.com/storage/books/792/5970348891753105337.webp"
   }
 ]

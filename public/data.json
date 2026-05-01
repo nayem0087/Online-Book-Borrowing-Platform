@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "Ava Rahman",
+    "description": "A mysterious forest hides secrets that change the lives of a small village forever.",
+    "category": "Story",
+    "available_quantity": 12,
+    "image_url": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383"
+  },
+  {
+    "id": 2,
+    "title": "Learning JavaScript Basics",
+    "author": "John Carter",
+    "description": "A beginner-friendly guide to understanding JavaScript fundamentals.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+  },
+  {
+    "id": 3,
+    "title": "The Quantum World",
+    "author": "Dr. Sarah Khan",
+    "description": "An introduction to the fascinating concepts of quantum physics.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://images.unsplash.com/photo-1507413245164-6160d8298b31"
+  },
+  {
+    "id": 4,
+    "title": "Broken Dreams",
+    "author": "Nusrat Jahan",
+    "description": "A touching story of love, loss, and hope in modern life.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  },
+  {
+    "id": 5,
+    "title": "Mastering React",
+    "author": "David Miller",
+    "description": "Advanced concepts and real-world applications of React.js.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+  },
+  {
+    "id": 6,
+    "title": "Space Exploration 101",
+    "author": "Neil Armstrong Jr.",
+    "description": "A beginner's guide to understanding space missions and discoveries.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of the Night",
+    "author": "Rafiul Islam",
+    "description": "A thrilling mystery that unfolds in the darkness of the night.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+  },
+  {
+    "id": 8,
+    "title": "Python for Beginners",
+    "author": "Emily Watson",
+    "description": "A step-by-step guide to learning Python programming.",
+    "category": "Tech",
+    "available_quantity": 11,
+    "image_url": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
+  },
+  {
+    "id": 9,
+    "title": "Human Anatomy Simplified",
+    "author": "Dr. Hasan Ali",
+    "description": "An easy-to-understand guide to human body systems.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8"
+  },
+  {
+    "id": 10,
+    "title": "Love Beyond Time",
+    "author": "Sharmeen Akter",
+    "description": "A romantic tale that transcends time and space.",
+    "category": "Story",
+    "available_quantity": 13,
+    "image_url": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+  },
+  {
+    "id": 11,
+    "title": "Next.js in Action",
+    "author": "Michael Lee",
+    "description": "A practical guide to building modern web apps with Next.js.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+  },
+  {
+    "id": 12,
+    "title": "The Future of AI",
+    "author": "Dr. Anika Roy",
+    "description": "Exploring the possibilities and challenges of artificial intelligence.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995"
+  }
+]

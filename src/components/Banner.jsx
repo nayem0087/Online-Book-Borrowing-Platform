@@ -4,7 +4,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="bg-[url('https://img.magnific.com/premium-photo/large-collection-books_1142389-5032.jpg')] 
-    h-[60vh] sm:h-[70vh] md:h-[80vh] w-full 
+    h-[60vh] sm:h-[70vh] md:h-[80vh] w-full max-w-[90%] mx-auto 
     bg-cover bg-no-repeat bg-center 
     flex items-center rounded-lg shadow-2xl">
 

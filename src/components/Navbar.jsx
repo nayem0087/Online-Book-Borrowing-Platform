@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full shadow">
-            <div className="max-w-[90%] mx-auto px-6 py-4 flex items-center justify-between">
+            <div className="max-w-[90%] mx-auto py-4 flex items-center justify-between">
             {/* 🔹 Left: Logo */}
 
             <Link href="/">

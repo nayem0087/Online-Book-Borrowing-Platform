@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white mt-20 py-20 px-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div className="max-w-[90%] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-40">
         
         {/* About */}
         <div>
@@ -38,7 +38,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h2 className="text-lg font-semibold mb-4">Contact info</h2>
+          <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
           <p className="text-gray-300 text-sm leading-6 font-semibold hover:text-gray-100">
             Email: nayemk0087@gmail.com <br />
             WhatsApp: +8801888252746
@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
       {/* bottom */}
       <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 hover:text-gray-100 font-semibold">
-          <p>© {new Date().getFullYear()} pixgen. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Books. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <p

@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Adventure Stories", "category": "Story" },
+  { "id": 2, "name": "Romantic Novels", "category": "Story" },
+  { "id": 3, "name": "Mystery & Thriller", "category": "Story" },
+  { "id": 4, "name": "Web Development", "category": "Tech" },
+  { "id": 5, "name": "Mobile App Development", "category": "Tech" },
+  { "id": 6, "name": "Artificial Intelligence", "category": "Tech" },
+  { "id": 7, "name": "Physics Basics", "category": "Science" },
+  { "id": 8, "name": "Biology & Life Science", "category": "Science" },
+  { "id": 9, "name": "Space & Astronomy", "category": "Science" },
+  { "id": 10, "name": "Historical Stories", "category": "Story" },
+  { "id": 11, "name": "Cyber Security", "category": "Tech" },
+  { "id": 12, "name": "Environmental Science", "category": "Science" }
+]

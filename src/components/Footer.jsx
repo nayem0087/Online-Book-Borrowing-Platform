@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
-          <p className="text-gray-300 text-sm leading-6 font-semibold hover:text-gray-100">
+          <p className="text-gray-400 text-sm leading-6 font-semibold hover:text-gray-100">
             Email: nayemk0087@gmail.com <br />
             WhatsApp: +8801888252746
           </p>

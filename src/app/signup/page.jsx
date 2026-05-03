@@ -14,6 +14,7 @@ import {
     TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
 
@@ -35,17 +36,25 @@ export default function SignUpPage() {
 
             if (error) {
                 toast.error(error.message || "Signup Failed ❌");
-                return; 
+                return;
             }
 
             toast.success("Signup Successful 🎉");
             e.target.reset();
-            router.push("/"); 
+            router.push("/");
 
         } catch (err) {
             toast.error("Something went wrong ⚠️");
         }
     };
+
+
+     const handleGoogleSignUp = async() => {
+            await authClient.signIn.social({
+                provider: 'google'
+            })
+        }
+    
 
 
     return (
@@ -120,6 +129,8 @@ export default function SignUpPage() {
                     </Button>
                 </div>
             </Form>
+            <p className="flex justify-center py-2 font-semibold">Or</p>
+            <Button onClick={handleGoogleSignUp} variant="tertiary" className={'w-full'}><GrGoogle /> Sign with Google</Button>
         </Card>
     );
 }

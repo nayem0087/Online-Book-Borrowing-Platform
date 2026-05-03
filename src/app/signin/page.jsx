@@ -13,11 +13,10 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
-import { useRouter } from "next/navigation";
 
-export default function SignUpPage() {
+export default function SignInPage() {
 
-    const router = useRouter();
+
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -26,45 +25,28 @@ export default function SignUpPage() {
         const userData = Object.fromEntries(formData.entries());
 
         try {
-            const { data, error } = await authClient.signUp.email({
-                name: userData.name,
+            const { data, error } = await authClient.signIn.email({
                 email: userData.email,
                 password: userData.password,
-                image: userData.image,
+                callbackURL: '/'
             });
 
             if (error) {
                 toast.error(error.message || "Signup Failed ❌");
-                return; 
+            } else {
+                toast.success("Signup Successful 🎉");
+                e.target.reset(); // form clear
             }
-
-            toast.success("Signup Successful 🎉");
-            e.target.reset();
-            router.push("/"); 
-
         } catch (err) {
             toast.error("Something went wrong ⚠️");
         }
     };
-
-
     return (
         <Card className="border mx-auto w-125 py-10 mt-5">
-            <h1 className="text-center text-2xl font-bold">Register Here</h1>
+            <h1 className="text-center text-2xl font-bold">Log In Here</h1>
 
             <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-                <TextField isRequired name="name" type="text">
-                    <Label>Name</Label>
-                    <Input placeholder="Enter your name" />
-                    <FieldError />
-                </TextField>
-
-                <TextField isRequired name="image" type="text">
-                    <Label>Image URL</Label>
-                    <Input placeholder="Image URL" />
-                    <FieldError />
-                </TextField>
-
+        
                 <TextField
                     isRequired
                     name="email"
@@ -112,11 +94,10 @@ export default function SignUpPage() {
                 <div className="flex gap-2">
                     <Button type="submit">
                         <Check />
-                        Register
-                    </Button>
-                    <Button type="reset"
-                        onClick={() => router.push("/signin")}>
                         Login
+                    </Button>
+                    <Button type="reset" variant="secondary">
+                        Reset
                     </Button>
                 </div>
             </Form>

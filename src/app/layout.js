@@ -2,6 +2,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ToastProvider from "@/components/ToastProvider";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -14,16 +15,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${OutfitFont.className} h-full antialiased`}
-    >
+    <html lang="en" className={`${OutfitFont.className} h-full antialiased`}>
       <body suppressHydrationWarning>
-        <Navbar/>
+        <Navbar />
         <main className="max-w-[90%] mx-auto">
           {children}
         </main>
-        <Footer/>
+        <Footer />
+
+        
+        <ToastProvider />
       </body>
     </html>
   );

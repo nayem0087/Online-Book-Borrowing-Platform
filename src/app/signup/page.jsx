@@ -1,5 +1,6 @@
 "use client";
 
+import { toast } from "react-toastify";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import {
@@ -15,21 +16,32 @@ import {
 
 export default function SignUpPage() {
 
-    const onSubmit = async(e) => {
+
+
+    const onSubmit = async (e) => {
         e.preventDefault();
+
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-        console.log(userData);
 
-        const { data, error } = await authClient.signUp.email({
-            name: userData.name, // required
-            email: userData.email, // required
-            password: userData.password, // required
-            image: userData.image,
-            
-        });
+        try {
+            const { data, error } = await authClient.signUp.email({
+                name: userData.name,
+                email: userData.email,
+                password: userData.password,
+                image: userData.image,
+            });
+
+            if (error) {
+                toast.error(error.message || "Signup Failed ❌");
+            } else {
+                toast.success("Signup Successful 🎉");
+                e.target.reset(); // form clear
+            }
+        } catch (err) {
+            toast.error("Something went wrong ⚠️");
+        }
     };
-
     return (
         <Card className="border mx-auto w-125 py-10 mt-5">
             <h1 className="text-center text-2xl font-bold">Sign Up</h1>

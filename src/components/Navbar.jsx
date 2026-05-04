@@ -5,14 +5,19 @@ import logoImg from "@/assets/navbar-logo.jpg";
 import { Avatar, Button } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import { ul } from "framer-motion/client";
+import { router } from "better-auth/api";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
 
   const userData = authClient.useSession();
   const user = userData.data?.user;
 
+   const router = useRouter();
+
   const handleSignOut = async () => {
     await authClient.signOut();
+    router.push("/signin");
   }
 
   return (

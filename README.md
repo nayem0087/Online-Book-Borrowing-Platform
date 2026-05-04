@@ -1,26 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚  Online Book Borrowing Platform
 
-## Getting Started
+A modern web application where users can explore, borrow, and manage books online with a smooth and user-friendly experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+(https://online-book-borrowing-platform-phi.vercel.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js
+* **Styling:** Tailwind CSS, DaisyUI / HeroUI
+* **Authentication:** BetterAuth
+* **Language:** TypeScript / JavaScript
+
+---
+
+## ✨ Features
+
+* 🔐 User Authentication (Sign Up / Login / Logout)
+* 👤 User Profile Management (Update Name & Image)
+* 📖 Browse Available Books
+* 📚 Borrow Books System
+* 📦 Book Availability Tracking
+* 🎯 Clean and Responsive UI
+* ⚡ Fast Performance with Next.js
+
+---
+
+## 📁 Project Structure
+
+```
+/app
+  /components
+  /pages
+  /api
+/lib
+  auth-client.ts
+/public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to run the project locally:
 
-## Learn More
+```bash
+# 1. Clone the repository
+git clone https://github.com/nayem0087/Online-Book-Borrowing-Platform
+
+# 2. Go to project folder
+cd your-repo-name
+
+# 3. Install dependencies
+npm install
+
+# 4. Run development server
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```
+NEXT_PUBLIC_BASE_URL=your_url
+AUTH_SECRET=your_secret
+```
+
+*(Update based on your BetterAuth configuration)*
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots of your UI here)*
+
+---
+
+## 🧠 Future Improvements
+
+* 📊 Admin Dashboard
+* 📅 Book Return Deadline System
+* 🔔 Notifications System
+* ⭐ Book Reviews & Ratings
+* 🔍 Advanced Search & Filters
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Nayem Ahmed**
+Frontend Developer
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
 
 To learn more about Next.js, take a look at the following resources:
 

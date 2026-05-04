@@ -1,23 +1,47 @@
-// import { Button } from "@heroui/react";
+'use client';
 
+import { useRouter, useSearchParams } from 'next/navigation';
+import { Button } from "@heroui/react";
 
-// const Category = async({searchParams}) => {
+const Category = ({ categories }) => {
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const activeCategory = searchParams.get('category');
 
-//      const {category} = await searchParams;
-//     // console.log(category);
+    const uniqueCategories = categories.filter(
+        (cat, index, self) =>
+            index === self.findIndex(c => c.category === cat.category)
+    );
 
-//     const res = await fetch('https://online-book-borrowing-platform-phi.vercel.app/category.json');
-//     const categories = await res.json();
-//     // console.log(categories);
-//     const filteredBooks = Books.filter(book => book.category.toLowerCase() == category.toLowerCase())
+    const handleFilter = (category) => {
+        if (category === activeCategory) {
+            router.push('/all-books');
+        } else {
+            router.push(`/all-books?category=${category}`);
+        }
+    };
 
-//     return (
-//         <div className="mb-5 space-x-3">
-//             {
-//                 categories.map(category => <Button size="sm" variant="outline" key={category.id} className="">{category.category}</Button>)
-//             }
-//         </div>
-//     );
-// };
+    return (
+        <div className="mb-5 space-x-3">
+            <Button
+                size="sm"
+                variant={!activeCategory ? "primary" : "outline"}
+                onClick={() => router.push('/all-books')}
+            >
+                All
+            </Button>
+            {uniqueCategories.map(cat => (
+                <Button
+                    size="sm"
+                    variant={activeCategory === cat.category ? "primary" : "outline"}
+                    key={cat.id}
+                    onClick={() => handleFilter(cat.category)}
+                >
+                    {cat.category}
+                </Button>
+            ))}
+        </div>
+    );
+};
 
-// export default Category;
+export default Category;
